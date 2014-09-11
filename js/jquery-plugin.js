@@ -6,4 +6,4 @@
 
 })(jQuery)
 
-$('a').plugin();
+$('el').plugin();
