@@ -1,9 +1,19 @@
 (function($){
 
-    $.fn.plugin = function(){
-        console.log(this);
+    $.fn.plugin = function(p){
+        console.log(this, p);
     }
 
 })(jQuery)
 
-$('el').plugin();
+(function($){
+
+    $.fn.plugin = function(p){
+        this.each(function(i, o){
+            console.log(this, p, i, o);
+        });
+    }
+
+})(jQuery);
+
+//$('el').plugin({a:'b'});
