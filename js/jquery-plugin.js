@@ -4,7 +4,7 @@
         console.log(this, p);
     }
 
-})(jQuery)
+})(jQuery);
 
 (function($){
 
